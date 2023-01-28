@@ -13,7 +13,7 @@ on:
     inputs:
       branch:
         description: "Select the releases branch"
-        required: false
+        required: true
         default: "22.03.3"
         type: choice
         options:
@@ -23,8 +23,8 @@ on:
           - 18.06.9
       openwrt_board:
         description: "Select Amlogic board"
-        required: false
-        default: "s905x3_s905d_s912"
+        required: true
+        default: "s905x"
         type: choice
         options:
           - all
@@ -48,7 +48,7 @@ on:
           - s905l2
       openwrt_kernel:
         description: "Select kernel version"
-        required: false
+        required: true
         default: "5.15.85_6.1.1"
         type: choice
         options:
@@ -62,7 +62,7 @@ on:
           - 6.1.1
       auto_kernel:
         description: "Auto use the latest kernel"
-        required: false
+        required: true
         default: true
         type: boolean
       kernel_repo:
@@ -71,7 +71,7 @@ on:
         default: "https://github.com/ophub/kernel/tree/main/pub"
       openwrt_size:
         description: "Set the rootfs size(Unit: MiB)"
-        required: false
+        required: true
         default: "1024"
 
 env:
