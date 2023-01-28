@@ -49,7 +49,7 @@ on:
       openwrt_kernel:
         description: "Select kernel version"
         required: true
-        default: "5.15.85_6.1.1"
+        default: "5.15.85"
         type: choice
         options:
           - 5.4.225_5.10.160_5.15.85
@@ -67,7 +67,7 @@ on:
         type: boolean
       kernel_repo:
         description: "Set the kernel repository"
-        required: false
+        required: true
         default: "https://github.com/ophub/kernel/tree/main/pub"
       openwrt_size:
         description: "Set the rootfs size(Unit: MiB)"
@@ -143,7 +143,7 @@ jobs:
           body: |
             This is OpenWrt firmware for Amlogic s9xxx tv box
             * Firmware information
-            Default IP: 192.168.1.1
+            Default IP: 10.0.0.1
             Default username: root
             Default password: password
             Default WIFI name: OpenWrt
