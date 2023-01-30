@@ -72,10 +72,10 @@ on:
       openwrt_size:
         description: "Set the rootfs size(Unit: MiB)"
         required: true
-        default: "4096"
+        default: "1024"
 
 env:
-  TZ: America/New_York
+  TZ: Asia/Jakarta
   IMAGEBUILDER_SH: router-config/openwrt-imagebuilder/imagebuilder.sh
 
 jobs:
@@ -92,7 +92,6 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          docker rmi `docker images -q`
           sudo rm -rf /usr/share/dotnet /etc/apt/sources.list.d /usr/local/lib/android 2>/dev/null
           sudo -E apt-get -y purge azure-cli ghc* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* adoptopenjdk* mongodb* dotnet* moby* snapd* || true
           sudo -E apt-get -qq update -y
