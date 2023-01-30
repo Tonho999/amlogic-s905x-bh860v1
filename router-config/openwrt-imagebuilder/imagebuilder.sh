@@ -168,7 +168,7 @@ rebuild_firmware() {
         coreutils coreutils-base64 coreutils-nohup coreutils-truncate curl  \
         dosfstools dumpe2fs e2freefrag e2fsprogs exfat-mkfs  \
         f2fs-tools f2fsck fdisk gawk getopt gzip iconv jq jshn  \
-        libjson-script  \
+        libjson-script tmux tmate zram-swap bind-tools ca-certificates libiwinfo-lua libcap libcap-bin  \
         liblucihttp liblucihttp-lua losetup lsattr lsblk lscpu mkf2fs  \
         mount-utils parted perl-http-date perlbase-file perlbase-getopt  \
         perlbase-time perlbase-unicode perlbase-utf8 pigz  \
