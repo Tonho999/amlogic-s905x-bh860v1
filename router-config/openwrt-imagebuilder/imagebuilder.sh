@@ -176,6 +176,8 @@ rebuild_firmware() {
         tune2fs uclient-fetch uhttpd uhttpd-mod-ubus unzip uqmi  \
         uuidgen wget-ssl whereis which xfs-fsck xfs-mkfs xz  \
         xz-utils ziptool zoneinfo-asia zoneinfo-core zstd  \
+        libmbedtls12 wget iptables ipset ip-full iptables-mod-tproxy iptables-mod-extra  \
+        ruby ruby-yaml kmod-tun kmod-inet-diag  \
         \
         luci luci-base luci-compat luci-lib-base  \
         luci-lib-ip luci-lib-ipkg luci-lib-jsonc luci-lib-nixio  \
