@@ -164,7 +164,7 @@ rebuild_firmware() {
     # sorting by https://build.moz.one
     my_packages="\
         attr base-files bash blkid block-mount blockd bsdtar  \
-        busybox bzip2 cgi-io chattr comgt comgt-ncm coremark  \
+        btrfs-progs busybox bzip2 cgi-io chattr comgt comgt-ncm coremark  \
         coreutils coreutils-base64 coreutils-nohup coreutils-truncate curl  \
         dosfstools dumpe2fs e2freefrag e2fsprogs exfat-mkfs  \
         f2fs-tools f2fsck fdisk gawk getopt gzip iconv jq jshn  \
