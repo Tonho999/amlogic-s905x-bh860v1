@@ -117,9 +117,6 @@ custom_packages() {
     #
     # Download other luci-app-xxx
     # ......
-    download_file="https://op.supes.top/packages/aarch64_cortex-a53/luci-app-ramfree_git-23.361.71802-8c6274a_all.ipk"
-    download_file="https://op.supes.top/packages/aarch64_cortex-a53/luci-app-diskman_git-23.361.71802-8c6274a_all.ipk"
-    wget -q ${download_file}
     
     sync && sleep 3
     echo -e "${INFO} [ packages ] directory status: $(ls packages -l 2>/dev/null)"
@@ -188,7 +185,7 @@ rebuild_firmware() {
         luci-proto-ipip luci-proto-ipv6 luci-proto-ncm  \
         luci-proto-openconnect luci-proto-qmi  \
         \
-        luci-app-amlogic luci-app-ramfree luci-app-diskman \
+        luci-app-amlogic \
         \
         ${config_list} \
         "
