@@ -170,11 +170,10 @@ rebuild_firmware() {
         procd-ujail uboot-envtools uci uclient-fetch urandom-seed urngd  \
         tmux tmate zram-swap bind-tools block-mount e2fsprogs fdisk  \
         \
-        luci luci-base luci-compat luci-lib-base  \
+        luci-base luci-compat luci-lib-base  \
         luci-lib-ip luci-lib-ipkg luci-lib-jsonc luci-lib-nixio  \
         luci-mod-admin-full luci-mod-network luci-mod-status luci-mod-system  \
-        luci-proto-ipip luci-proto-ipv6 luci-proto-ncm  \
-        luci-proto-openconnect luci-proto-qmi  \
+        luci-proto-ipip  \
         \
         luci-app-amlogic \
         \
