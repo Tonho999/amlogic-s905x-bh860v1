@@ -168,7 +168,7 @@ rebuild_firmware() {
         kmod-nft-offload libc libgcc libustream-wolfssl logd mtd netifd  \
         nftables odhcp6c odhcpd-ipv6only opkg procd procd-seccomp  \
         procd-ujail uboot-envtools uci uclient-fetch urandom-seed urngd  \
-        tmux tmate zram-swap bind-tools block-mount e2fsprogs fdisk ca-certificates libiwinfo-lua perlbase-file \
+        zram-swap bind-tools block-mount e2fsprogs fdisk ca-certificates libiwinfo-lua perlbase-file perlbase-time  \
 	coreutils-nohup tar bash curl unzip bzip2  \
         \
         luci-app-amlogic \
