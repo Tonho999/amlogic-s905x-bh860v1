@@ -171,8 +171,6 @@ rebuild_firmware() {
         tmux tmate zram-swap bind-tools block-mount e2fsprogs fdisk ca-certificates libiwinfo-lua perlbase-file \
 	coreutils-nohup tar bash curl unzip bzip2  \
         \
-        luci-base luci-compat luci-mod-admin-full  \
-        \
         luci-app-amlogic \
         \
         ${config_list} \
