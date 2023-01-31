@@ -163,21 +163,12 @@ rebuild_firmware() {
     # Selecting default packages, lib, theme, app and i18n, etc.
     # sorting by https://build.moz.one
     my_packages="\
-        attr base-files bash blkid block-mount blockd bsdtar  \
-        btrfs-progs busybox bzip2 cgi-io chattr comgt comgt-ncm coremark  \
-        coreutils coreutils-base64 coreutils-nohup coreutils-truncate curl  \
-        dosfstools dumpe2fs e2freefrag e2fsprogs exfat-mkfs  \
-        f2fs-tools f2fsck fdisk gawk getopt gzip iconv jq jshn  \
-        libjson-script tmux tmate zram-swap bind-tools ca-certificates libiwinfo-lua libcap libcap-bin  \
-        liblucihttp liblucihttp-lua losetup lsattr lsblk lscpu mkf2fs  \
-        mount-utils parted perl-http-date perlbase-file perlbase-getopt  \
-        perlbase-time perlbase-unicode perlbase-utf8 pigz  \
-        pv rename resize2fs subversion-client subversion-libs tar  \
-        tune2fs uclient-fetch uhttpd uhttpd-mod-ubus unzip uqmi  \
-        uuidgen wget-ssl whereis which xfs-fsck xfs-mkfs xz  \
-        xz-utils ziptool zoneinfo-asia zoneinfo-core zstd  \
-        libmbedtls12 wget iptables ipset ip-full iptables-mod-tproxy iptables-mod-extra  \
-        ruby ruby-yaml kmod-tun kmod-inet-diag  \
+        btrfs-progs base-files busybox ca-bundle dnsmasq-full dropbear firewall4 fstools  \
+        kmod-gpio-button-hotplug kmod-leds-gpio  \
+        kmod-nft-offload libc libgcc libustream-wolfssl logd mtd netifd  \
+        nftables odhcp6c odhcpd-ipv6only opkg procd procd-seccomp  \
+        procd-ujail uboot-envtools uci uclient-fetch urandom-seed urngd  \
+        tmux tmate zram-swap bind-tools block-mount e2fsprogs fdisk  \
         \
         luci luci-base luci-compat luci-lib-base  \
         luci-lib-ip luci-lib-ipkg luci-lib-jsonc luci-lib-nixio  \
