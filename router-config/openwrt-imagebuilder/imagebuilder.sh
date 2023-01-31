@@ -171,7 +171,7 @@ rebuild_firmware() {
         zram-swap block-mount e2fsprogs fdisk ca-certificates libiwinfo-lua perlbase-file perlbase-time  \
 	coreutils-nohup tar bash curl luci-compat unzip bzip2  \
         \
-        ##luci-app-amlogic \
+        luci-app-amlogic \
         \
         ${config_list} \
         "
