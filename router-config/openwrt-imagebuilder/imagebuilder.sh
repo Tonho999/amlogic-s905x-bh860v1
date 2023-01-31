@@ -108,12 +108,12 @@ custom_packages() {
     [[ -d "packages" ]] || mkdir packages
 
     # Download luci-app-amlogic
-    amlogic_api="https://api.github.com/repos/ophub/luci-app-amlogic/releases"
+   ## amlogic_api="https://api.github.com/repos/ophub/luci-app-amlogic/releases"
     #
-    amlogic_file="luci-app-amlogic"
-    amlogic_file_down="$(curl -s ${amlogic_api} | grep "browser_download_url" | grep -oE "https.*${amlogic_name}.*.ipk" | head -n 1)"
-    wget -q ${amlogic_file_down} -O packages/${amlogic_file_down##*/}
-    [[ "${?}" -eq "0" ]] && echo -e "${INFO} The [ ${amlogic_file} ] is downloaded successfully."
+   ## amlogic_file="luci-app-amlogic"
+   ## amlogic_file_down="$(curl -s ${amlogic_api} | grep "browser_download_url" | grep -oE "https.*${amlogic_name}.*.ipk" | head -n 1)"
+   ## wget -q ${amlogic_file_down} -O packages/${amlogic_file_down##*/}
+   ## [[ "${?}" -eq "0" ]] && echo -e "${INFO} The [ ${amlogic_file} ] is downloaded successfully."
     #
     # Download other luci-app-xxx
     # ......
@@ -168,10 +168,10 @@ rebuild_firmware() {
         kmod-nft-offload libc libgcc libustream-wolfssl logd mtd netifd  \
         nftables odhcp6c odhcpd-ipv6only opkg procd procd-seccomp  \
         procd-ujail uboot-envtools uci uclient-fetch urandom-seed urngd  \
-        zram-swap bind-tools block-mount e2fsprogs fdisk ca-certificates libiwinfo-lua perlbase-file perlbase-time  \
+        zram-swap block-mount e2fsprogs fdisk ca-certificates libiwinfo-lua perlbase-file perlbase-time  \
 	coreutils-nohup tar bash curl unzip bzip2  \
         \
-        luci-app-amlogic \
+       ## luci-app-amlogic \
         \
         ${config_list} \
         "
