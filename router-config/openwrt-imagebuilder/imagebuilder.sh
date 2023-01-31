@@ -169,6 +169,7 @@ rebuild_firmware() {
         nftables odhcp6c odhcpd-ipv6only opkg procd procd-seccomp  \
         procd-ujail uboot-envtools uci uclient-fetch urandom-seed urngd  \
         tmux tmate zram-swap bind-tools block-mount e2fsprogs fdisk ca-certificates libiwinfo-lua perlbase-file \
+	coreutils-nohup tar bash curl unzip bzip2  \
         \
         luci-base luci-compat luci-mod-admin-full  \
         \
