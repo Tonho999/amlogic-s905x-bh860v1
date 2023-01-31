@@ -169,7 +169,7 @@ rebuild_firmware() {
         nftables odhcp6c odhcpd-ipv6only opkg procd procd-seccomp  \
         procd-ujail uboot-envtools uci uclient-fetch urandom-seed urngd  \
         zram-swap block-mount e2fsprogs fdisk ca-certificates libiwinfo-lua perlbase-file perlbase-time  \
-	coreutils-nohup tar bash curl unzip bzip2  \
+	coreutils-nohup tar bash curl luci-compat unzip bzip2  \
         \
         ##luci-app-amlogic \
         \
