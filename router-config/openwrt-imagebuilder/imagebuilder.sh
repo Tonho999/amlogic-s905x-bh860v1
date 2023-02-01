@@ -169,8 +169,6 @@ rebuild_firmware() {
         zram-swap tar bash curl luci-compat  \
         perlbase-file perlbase-time  \
         \
-        luci-app-amlogic \
-        \
         ${config_list} \
         "
 
