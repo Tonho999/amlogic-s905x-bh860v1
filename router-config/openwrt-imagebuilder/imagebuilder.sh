@@ -158,7 +158,7 @@ rebuild_firmware() {
     # sorting by https://build.moz.one
     my_packages="\
         btrfs-progs base-files busybox ca-bundle dropbear e2fsprogs firewall4 fstools kmod-nft-offload  \
-	libc libgcc libustream-wolfssl logd mkf2fs mtd netifd nftables odhcp6c opkg partx-utils  \
+	libc libgcc libustream-wolfssl logd mkf2fs -dnsmasq dnsmasq-full netifd nftables odhcp6c opkg partx-utils  \
 	procd procd-seccomp procd-ujail uboot-envtools uci uclient-fetch urandom-seed urngd  \
 	zram-swap tar curl luci-compat perlbase-file perlbase-time  \
         \
