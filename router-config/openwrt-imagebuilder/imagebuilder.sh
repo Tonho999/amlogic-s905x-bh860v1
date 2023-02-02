@@ -160,9 +160,9 @@ rebuild_firmware() {
         btrfs-progs base-files busybox bash ca-bundle dropbear e2fsprogs firewall4 fstools kmod-nft-offload  \
 	libc libgcc libustream-wolfssl logd mkf2fs -dnsmasq dnsmasq-full netifd nftables odhcp6c -odhcpd-ipv6only opkg partx-utils  \
 	procd procd-seccomp procd-ujail uboot-envtools uci uclient-fetch urandom-seed urngd  \
-        zram-swap -perl -perl-http-date -perlbase-file -perlbase-getopt  \
-        coreutils-nohup -perlbase-time -perlbase-unicode -perlbase-utf8 -luci-proto-ppp -luci-proto-3g  \
-	unzip tmux ca-certificates bind-tools tar curl luci-compat  \
+        ##-perl -perl-http-date -perlbase-file -perlbase-getopt  \
+        ##-perlbase-time -perlbase-unicode -perlbase-utf8 -luci-proto-ppp -luci-proto-3g  \
+	zram-swap coreutils-nohup unzip tmux ca-certificates bind-tools tar curl luci-compat  \
         \
         luci-app-amlogic \	
         \
