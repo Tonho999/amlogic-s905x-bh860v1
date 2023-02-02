@@ -163,6 +163,10 @@ rebuild_firmware() {
     # Selecting default packages, lib, theme, app and i18n, etc.
     # sorting by https://build.moz.one
     my_packages="\
+        btrfs-progs base-files busybox ca-bundle dropbear e2fsprogs firewall4 fstools kmod-nft-offload  \
+	    libc libgcc libustream-wolfssl logd mkf2fs -dnsmasq dnsmasq-full netifd nftables odhcp6c opkg partx-utils  \
+	    procd procd-seccomp procd-ujail uboot-envtools uci uclient-fetch urandom-seed urngd  \
+	    zram-swap tar curl luci-compat perlbase-file perlbase-time  \
         -acpid -attr base-files bash -bc -bind-server blkid block-mount -blockd bsdtar  \
         btrfs-progs busybox -bzip2 cgi-io -chattr -comgt -comgt-ncm -containerd -coremark  \
         -coreutils -coreutils-base64 -coreutils-nohup -coreutils-truncate curl -docker  \
@@ -187,7 +191,7 @@ rebuild_firmware() {
         \
         ${config_list} \
         "
-
+        
     # Rebuild firmware
     make image PROFILE="Default" PACKAGES="${my_packages}" FILES="files"
 
