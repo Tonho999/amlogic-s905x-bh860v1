@@ -163,14 +163,16 @@ rebuild_firmware() {
     # Selecting default packages, lib, theme, app and i18n, etc.
     # sorting by https://build.moz.one
     my_packages="\
-        btrfs-progs base-files busybox ca-bundle dropbear e2fsprogs libustream-wolfssl  \
-        zram-swap tar curl luci-compat perlbase-file perlbase-time  \
+        btrfs-progs base-files busybox ca-bundle dropbear e2fsprogs firewall4 fstools kmod-nft-offload  \
+		libc libgcc libustream-wolfssl logd mkf2fs mtd netifd nftables odhcp6c odhcpd-ipv6only opkg partx-utils  \
+		procd procd-seccomp procd-ujail uboot-envtools uci uclient-fetch urandom-seed urngd  \
+		bash zram-swap coreutils-nohup unzip tmux ca-certificates bind-tools tar curl luci-compat perlbase-file perlbase-time  \
         \
         luci-app-amlogic \
         \
         ${config_list} \
         "
-
+        
     # Rebuild firmware
     make image PROFILE="Default" PACKAGES="${my_packages}" FILES="files"
 
