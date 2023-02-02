@@ -158,11 +158,9 @@ rebuild_firmware() {
     # sorting by https://build.moz.one
     my_packages="\
         btrfs-progs base-files busybox bash ca-bundle dropbear e2fsprogs firewall4 fstools kmod-nft-offload  \
-	libc libgcc libustream-wolfssl logd mkf2fs -dnsmasq dnsmasq-full netifd nftables odhcp6c -odhcpd-ipv6only opkg partx-utils  \
+	libc libgcc libustream-wolfssl logd mkf2fs -dnsmasq dnsmasq-full netifd nftables odhcp6c odhcpd-ipv6only opkg partx-utils  \
 	procd procd-seccomp procd-ujail uboot-envtools uci uclient-fetch urandom-seed urngd  \
-        ##-perl -perl-http-date -perlbase-file -perlbase-getopt  \
-        ##-perlbase-time -perlbase-unicode -perlbase-utf8 -luci-proto-ppp -luci-proto-3g  \
-	zram-swap coreutils-nohup unzip tmux ca-certificates bind-tools tar curl luci-compat  \
+	zram-swap coreutils-nohup unzip tmux ca-certificates bind-tools tar curl luci-compat perlbase-file perlbase-time  \
         \
         luci-app-amlogic \	
         \
