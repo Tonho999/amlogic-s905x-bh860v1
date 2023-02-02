@@ -160,7 +160,7 @@ rebuild_firmware() {
         btrfs-progs base-files busybox ca-bundle dropbear e2fsprogs firewall4 fstools kmod-nft-offload  \
         libc libgcc libustream-wolfssl logd mkf2fs netifd nftables odhcp6c odhcpd-ipv6only opkg partx-utils  \
         procd procd-seccomp procd-ujail uboot-envtools uci uclient-fetch urandom-seed urngd  \
-        zram-swap tar curl dnsmasq-full  \
+        zram-swap tar curl bash  \
         \
         \
         ${config_list} \
