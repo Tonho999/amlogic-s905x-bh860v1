@@ -117,7 +117,7 @@ custom_packages() {
     #
     # Download other luci-app-xxx
     # ......
-    
+
     sync && sleep 3
     echo -e "${INFO} [ packages ] directory status: $(ls packages -l 2>/dev/null)"
 }
@@ -163,17 +163,31 @@ rebuild_firmware() {
     # Selecting default packages, lib, theme, app and i18n, etc.
     # sorting by https://build.moz.one
     my_packages="\
-        btrfs-progs base-files busybox bash ca-bundle dropbear e2fsprogs firewall4 fstools kmod-nft-offload  \
-	libc libgcc libustream-wolfssl logd mkf2fs netifd nftables odhcp6c odhcpd-ipv6only opkg partx-utils  \
-	procd procd-seccomp procd-ujail uboot-envtools uci uclient-fetch urandom-seed urngd  \
-	zram-swap coreutils-nohup unzip tmux ca-certificates bind-tools tar curl luci-compat perlbase-file perlbase-time  \
-	-luci-proto-ppp -luci-proto-3g -ppp -ppp-mod-pppoe -chat
+        -acpid -attr base-files bash -bc -bind-server blkid block-mount -blockd bsdtar  \
+        btrfs-progs busybox -bzip2 cgi-io -chattr -comgt -comgt-ncm -containerd -coremark  \
+        -coreutils -coreutils-base64 -coreutils-nohup -coreutils-truncate curl -docker  \
+        -docker-compose -dockerd dosfstools -dumpe2fs -e2freefrag e2fsprogs -exfat-mkfs  \
+        -f2fs-tools -f2fsck fdisk -gawk -getopt -gzip -hostapd-common -iconv -iw -iwinfo -jq jshn  \
+        -kmod-brcmfmac -kmod-brcmutil -kmod-cfg80211 -kmod-mac80211 libjson-script  \
+        liblucihttp liblucihttp-lua -libnetwork losetup -lsattr lsblk -lscpu mkf2fs  \
+        -mount-utils -openssl-util parted -perl-http-date perlbase-file -perlbase-getopt  \
+        perlbase-time -perlbase-unicode -perlbase-utf8 -pigz -ppp -ppp-mod-pppoe  \
+        -proto-bonding pv -rename -resize2fs -runc -subversion-client subversion-libs tar  \
+        -tini -ttyd -tune2fs uclient-fetch uhttpd uhttpd-mod-ubus unzip uqmi -usb-modeswitch  \
+        uuidgen wget-ssl -whereis -which -wpa-cli -wpad-basic -wwan -xfs-fsck -xfs-mkfs xz  \
+        xz-utils -ziptool -zoneinfo-asia -zoneinfo-core zstd zram \
         \
-        luci-app-amlogic \	
+        luci luci-base luci-compat luci-lib-base  \
+        -luci-lib-ip -luci-lib-ipkg -luci-lib-jsonc -luci-lib-nixio  \
+        luci-mod-admin-full luci-mod-network luci-mod-status luci-mod-system  \
+        -luci-proto-3g -luci-proto-bonding -luci-proto-ipip luci-proto-ipv6 -luci-proto-ncm  \
+        -luci-proto-openconnect -luci-proto-ppp -luci-proto-qmi -luci-proto-relay  \
+        \
+        luci-app-amlogic \
         \
         ${config_list} \
         "
-        
+
     # Rebuild firmware
     make image PROFILE="Default" PACKAGES="${my_packages}" FILES="files"
 
