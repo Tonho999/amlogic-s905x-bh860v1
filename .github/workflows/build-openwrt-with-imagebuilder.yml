@@ -13,8 +13,8 @@ on:
     inputs:
       branch:
         description: "Select the releases branch"
-        required: true
-        default: "21.02.5"
+        required: false
+        default: "22.03.3"
         type: choice
         options:
           - 22.03.3
@@ -23,7 +23,7 @@ on:
           - 18.06.9
       openwrt_board:
         description: "Select Amlogic board"
-        required: true
+        required: false
         default: "s905x"
         type: choice
         options:
@@ -39,17 +39,20 @@ on:
           - s905x2-km3
           - s912
           - s912-m8s
+          - s912-t95z-plus
           - s905d
           - s905d-ki
           - s905x
+          - s905x-t95
           - s905w
           - s905
           - s905l3a
           - s905l2
+          - s905lb-r3300l
       openwrt_kernel:
         description: "Select kernel version"
-        required: true
-        default: "5.15.85"
+        required: false
+        default: "5.15.85_6.1.1"
         type: choice
         options:
           - 5.4.225_5.10.160_5.15.85
@@ -62,20 +65,20 @@ on:
           - 6.1.1
       auto_kernel:
         description: "Auto use the latest kernel"
-        required: true
+        required: false
         default: true
         type: boolean
       kernel_repo:
         description: "Set the kernel repository"
-        required: true
+        required: false
         default: "https://github.com/ophub/kernel/tree/main/pub"
       openwrt_size:
         description: "Set the rootfs size(Unit: MiB)"
-        required: true
+        required: false
         default: "1024"
 
 env:
-  TZ: Asia/Jakarta
+  TZ: America/New_York
   IMAGEBUILDER_SH: router-config/openwrt-imagebuilder/imagebuilder.sh
 
 jobs:
