@@ -24,7 +24,7 @@ on:
       openwrt_board:
         description: "Select Amlogic board"
         required: false
-        default: "s905x"
+        default: "s905x3_s905d_s912"
         type: choice
         options:
           - all
