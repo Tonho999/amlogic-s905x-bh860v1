@@ -166,7 +166,8 @@ rebuild_firmware() {
 	btrfs-progs base-files busybox ca-bundle dropbear e2fsprogs firewall fstools ip6tables iptables kmod-ipt-offload  \
 	libc libgcc libustream-wolfssl logd mkf2fs netifd odhcp6c odhcpd-ipv6only opkg partx-utils  \
 	procd uboot-envtools uci uclient-fetch urandom-seed urngd  \
-	bash zram-swap coreutils-nohup unzip ca-certificates bind-tools tar curl luci-compat perlbase-file perlbase-time  \
+        zram-swap tar bash curl luci-compat bind-tools coreutils-nohup perlbase-file perlbase-time  \
+        -ppp -ppp-mod-pppoe -kmod-ppp  \
         \
         luci-app-amlogic \
         \
